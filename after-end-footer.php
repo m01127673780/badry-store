@@ -376,13 +376,18 @@
 
  
  
+.owl_carousel_brands .owl-nav button.owl-next span {
    
 
+       left: -5%;
+ } 
+ .owl_carousel_brands .owl-nav  button.owl-prev span {
+   
 
-
+    /* top: 10px; */
+      right: -5%;
     
-
-
+}
 
  .owl_carousel_brands .owl-nav  button span
  {
@@ -397,30 +402,81 @@
     top: 11px;
     line-height: .6;
  }
- 
-.owl_carousel_brands .owl-nav button.owl-next span {left: -9%;} 
-.owl_carousel_brands .owl-nav  button.owl-prev span{ right: -9%;}
-
- @media(max-width: 1400px){
-.owl_carousel_brands .owl-nav button.owl-next span {left: -5%;} 
-.owl_carousel_brands .owl-nav  button.owl-prev span{ right: 0%;}
-} @media(max-width: 1350px){
-.owl_carousel_brands .owl-nav button.owl-next span {left: 51%; top: 55%;} 
-.owl_carousel_brands .owl-nav  button.owl-prev span{ right: 51%; top: 55%;}
-.owl_carousel_brands .owl-dots .owl-dot span{margin-top: 73px;}
-.owl_carousel_brands .owl-dots{ margin-top: -20px;}
- 
-.owl_carousel_brands .owl-dots .owl-dot{
-  outline: none;
-  border: none;
-
-}
-
+{
 
 }
  
 
+@media(max-width: 1275px){
  
+.owl_carousel_brands .owl-nav button.owl-next span {
+   
+
+       left: -5%;
+ } 
+ .owl_carousel_brands .owl-nav  button.owl-prev span {
+   
+
+    /* top: 10px; */
+      right: -5%;
+    
+    }
+  }
+
+
+@media  (max-width:1172px) {
+
+   .owl_carousel_brands .owl-nav  button span
+ {
+
+     position: absolute;
+  
+ }
+
+}
+@media  (min-width:100px) {
+
+   .owl_carousel_brands .owl-nav  button span
+ {
+
+     position: relative!important;
+  
+ }
+
+}
+
+@media  (min-width:1300px) {
+
+   .owl_carousel_brands .owl-nav  button span
+ {
+
+     position: absolute!important;
+  
+ }
+
+}
+
+
+@media(max-width: 768px){
+/*  .owl_carousel_brands .owl-nav button.owl-next span 
+  {
+      position: relative;
+  }
+ .owl_carousel_brands .owl-nav  button.owl-prev span 
+ {
+        position: relative;
+ }*/
+
+.owl_carousel_brands .owl-dots .owl-dot span
+{
+display: none;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: none;
+  }
+}
+
  /*--------------------------------------------------adds*/
  .single-adds {
    width: 400px;
@@ -1858,72 +1914,16 @@ border-color:  #eee;
           
              <div class="col-md-6 contact_col_newsletter" >  
               <h4 class="title_p_newslettr">Newsletter</h4>
-              <h6 class="p_p_newslettr">Sign Up for get all update news & Get <a href="#">15% off</a></h6>
+              <h6 class="p_p_newslettr">Sign Up for get all update news & Get 15% off</h6>
              </div><!--col-md-6===============================-->
          <div class="col-md-6 contact_col_newsletter" >  
-        
-
-                  <div class=" con_form_news_letter">
-                
-                  <div class=" con_input_newsletter "><input type="text" class="input_form_newsletter" name=""></div>
-                  <div class="con_btn_newsletter"> <div class="input-group-prepend">
-                      <span class="input-group-text  btn_newsletter"><span> <button type="submit" class="btn btn_newsletter"> <i class="pe-7s-paper-plane pe-lg"></i></button></span>
+            <div class=" input-group input-group-sm mb-3">
+                <input type="text" class="form-control  input_newsletter"   >
+                  <div class="input-group-prepend">
+                      <span class="input-group-text  btn_newsletter"  ><span> <button type="submit" class="btn btn_newsletter"> <i class="pe-7s-paper-plane pe-lg"></i></button></span>
                     </span> 
-              </div></div>
-                  </div>
-             
-              <style type="text/css">
-                .con_form_news_letter{
-                  /*background: red;*/
-                  height: 50px;
-                  width: 100%;
-                  padding: 0;
-                  margin: 0;
-
-                } 
-                  .con_input_newsletter{
-/*                  background: green;
-*/                  height: 50px;
-                  width: 89%;
-                  display: inline-block;
-                }
-                   .con_btn_newsletter{
-                  /*background: blue;*/
-                  height: 50px;
-                  width: 10%;
-                  display: inline-block;
-                }
-               .btn_newsletter {
-                 margin-left: -15px;
-    border-radius: 5px;
-    padding-right: 30px;
-                }
-.prepend .btn {
-    position: unset;
-    z-index: -2;
-}
- 
-  .con_input_newsletter input {
-    z-index: 2;
-   background: #b6b3b300 none repeat scroll 0 0;
-    border: 1px solid #aaaaaa;
-    border-radius: 5px;
-    color: #999999;
-    font-size: 12px;
-    height: 48px;
-    line-height: 48px;
-    padding-left: 20px;
-    padding-right: 55px;
-    position: relative;
-    width: 100%;
-    background: #fff;
-  }
-  .input-group-append .btn, .input-group-prepend .btn.btn_newsletter {
-    position: inherit;
-    z-index: 2;
-}
-              </style>
-           
+              </div>
+            </div>
           </div><!--col-md-6===============================-->
         </div><!--row-->
      </div><!--container-->
@@ -2095,7 +2095,7 @@ $('.owl_carousel_brands').owlCarousel({
     autoplay:true,
     autoplayTimeout:1300,
     margin:10,
-    nav:true,
+    nav:false,
     dots:true,
     dotsSpeed:500,
    smartSpeed:1300,

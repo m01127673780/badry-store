@@ -149,34 +149,6 @@
     .m_r_l_20{
           margin: 20px  0;
      }
-     /*------------------------------------------10px*/
-  .m_t_10{
-          margin-top: 10px ;
-     }
-     .m_b_10{
-          margin-bottom: 10px ;
-     } 
-        .m_t_10{
-          margin-bottom: 10px ;
-     }
-     .m_l_10{
-          margin-left: 10px ;
-     }
-     .m_r_10{
-          margin-right: 10px ;
-     }
-     .m_t_b_10{
-          margin: 10px  0;
-     }
-      .m_b_t_10{
-          margin: 10px  0;
-     } 
-    .m_l_r_10{
-          margin: 10px  0;
-     }
-    .m_r_l_10{
-          margin: 10px  0;
-     }
 /*--------------------------------------padding*/
      .p_t_100{
           padding-top: 100px ;
@@ -250,8 +222,7 @@
      }
     .p_r_l_30{
           padding: 30px  0;
-     }
-      /*------------------------------------------20px*/
+     } /*------------------------------------------20px*/
   .p_t_20{
           padding-top: 20px ;
      }
@@ -276,31 +247,6 @@
     .p_r_l_20{
           padding: 20px  0;
      }
-      /*------------------------------------------10px*/
-  .p_t_10{
-          padding-top: 10px ;
-     }
-     .p_b_10{
-          padding-bottom: 10px ;
-     }
-     .p_l_10{
-          padding-left: 10px ;
-     }
-     .p_r_10{
-          padding-right: 10px ;
-     }
-     .p_t_b_10{
-          padding: 10px  0;
-     }
-      .p_b_t_10{
-          padding: 10px  0;
-     } 
-    .p_l_r_10{
-          padding: 10px  0;
-     }
-    .p_r_l_10{
-          padding: 10px  0;
-     }
      p{
           font-family: 'Poppins', sans-serif;
      }
@@ -318,7 +264,8 @@
     font-size: 11px;
     font-weight: bold;
     text-decoration: line-through;
-  } a:hover {
+    position: absolute;
+ } a:hover {
      
     text-decoration:none;
     
@@ -376,51 +323,41 @@
 
  
  
-   
-
-
-
-    
-
-
-
- .owl_carousel_brands .owl-nav  button span
- {
-  background: #0c274c;
-      color: #fff;
+.owl_carousel_brands .owl-nav button.owl-next span {
+    background: #0c274c;
+    color: #fff;
     border-color: #0c274c;
     width: 35px;
     height: 35px;
-     border-radius: 50%; 
+    /* border-radius: 50%; */
     font-size: 38px;
-    position: absolute;
+    line-height: 0;
+    /* top: 10px; */
+    /* position: absolute; */
+    float: left;
     top: 11px;
+    position: absolute;
+    left: -79px;
     line-height: .6;
- }
- 
-.owl_carousel_brands .owl-nav button.owl-next span {left: -9%;} 
-.owl_carousel_brands .owl-nav  button.owl-prev span{ right: -9%;}
-
- @media(max-width: 1400px){
-.owl_carousel_brands .owl-nav button.owl-next span {left: -5%;} 
-.owl_carousel_brands .owl-nav  button.owl-prev span{ right: 0%;}
-} @media(max-width: 1350px){
-.owl_carousel_brands .owl-nav button.owl-next span {left: 51%; top: 55%;} 
-.owl_carousel_brands .owl-nav  button.owl-prev span{ right: 51%; top: 55%;}
-.owl_carousel_brands .owl-dots .owl-dot span{margin-top: 73px;}
-.owl_carousel_brands .owl-dots{ margin-top: -20px;}
- 
-.owl_carousel_brands .owl-dots .owl-dot{
-  outline: none;
-  border: none;
-
+} 
+ .owl_carousel_brands .owl-nav  button.owl-prev span {
+    background: #0c274c;
+    color: #fff;
+    border-color: #0c274c;
+    width: 35px;
+    height: 35px;
+    /* border-radius: 50%; */
+    font-size: 38px;
+    line-height: 0;
+    /* top: 10px; */
+    /* position: absolute; */
+    float: right;
+    top: 11px;
+    position: absolute;
+    right: -79px;
+    line-height: .6;
 }
 
-
-}
- 
-
- 
  /*--------------------------------------------------adds*/
  .single-adds {
    width: 400px;
@@ -533,13 +470,13 @@
  }
 .card_product_min_discrption {
      border: 1px solid #eee;
-     padding: 0 2px;
+    float: right;
+    padding: 0 2px;
     padding: 4px 15px;
     background: red;
     color: #fff;
     font-size: 12px;
     font-weight: bold;
-    margin-left: 24.2%;
  }
  .card_product_min_price {
     color: blue;
@@ -571,25 +508,6 @@
     text-transform: uppercase;
     transition: all 0.3s ease 0s;
  }
- @media(max-width: 888px)
- {
-      .btn_choos_type_product
-      {
-        font-size: 14px;
-        padding: 5px 15px 9px;
-        line-height: 3;
-    }
-
- } 
- @media(max-width: 535px)
- {
-      .btn_choos_type_product
-      {
-       /* font-size: 11px;
-        padding: 5px 1px 9px;*/
-    }
-
- }
   .btn_choos_type_product.active_btn_product{
  
     background: blue;
@@ -602,7 +520,6 @@
     display: inline-block!important;
  
      }
-
 
  /*-----------------------------------------------------------------End product_min*/
  /*-----------------------------------------------------------------start  NewsLetter */
@@ -730,7 +647,7 @@ border-color:  #eee;
       color: #fff;
     }
     .a_link_footer_social{
-    color: #aaa;
+        color: #aaa;
     border: 1px solid #999;
     padding: 5px 10px 7px 10px;
     background-color: transparent;
@@ -745,17 +662,11 @@ border-color:  #eee;
     text-align: center;
     border-radius: 10%;
     margin: 0 2px;
-    font-size: 23px;
     line-height: 0;
+    font-size: 23px;
 
     }
-    @media(max-width: 1200px){
-      .a_link_footer_social{
-        float: left;
-      }
-    } 
- 
-    .a_link_footer_social i {
+   .a_link_footer_social i {
       margin-left: -5px;
       font-size: 25px;
       line-height: .9;
@@ -815,29 +726,9 @@ border-color:  #eee;
         margin-bottom: 20px;
         width: 29%;
 }
-      @media(max-width: 992px){
-   .content_footer_copyright_social p {
-     line-height: 1;
-     letter-spacing: 1px;
-    font-size: 14px;
-        }  
-         .content_footer_copyright_social  {
-      margin-top: 15px;
-        }
-         .content_footer  {
-      padding: 0px;
-        }  
-             .content_footer_section_addres_pages_cat {
-      padding: 0px;
-        }
 
 
 
-      }
-
-
-
-/*---------------------------------------------------------- start bn-breaking-news*/
 
 
 
@@ -1160,105 +1051,47 @@ border-color:  #eee;
 }
 
 /*********************************//*********************************/
- 
- /*-----------------------------------------------start 600px media *//* Extra small devices (phones, 600px and down) */
 
- @media(max-width:600px){
- 
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url(http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/banner/banner-top/1.png));
+    }
+}
 
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url(http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/banner/banner-top/3.png));
+    }
+}
 
- }  /*End media max*/
- /*................................... Small devices (portrait tablets and large phones, 600px and up)
-  @media(min-width:600px){
- 
-
-
- }  /*End media min*/
-/*-----------------------------------------------End 600px media */
-
- /*-----------------------------------------------start 768px media Medium devices (landscape tablets, 768px and up) */
- 
- @media(max-width:768px){
- 
-
-
- }  /*End media max*/
- /*................................... Large devices (laptops/desktops, 992px and up)*/
-  @media(min-width:768px){
- 
-
-
- }  /*End media min*/
-/*-----------------------------------------------End 768px media */
-
- /*-----------------------------------------------start 992px media */
- @media(max-width:992px){
- 
-
-
- }  /*End media max*/
- /*................................... Large devices (laptops/desktops, 992px and up*/
-  @media(min-width:992px){
- 
-
-
- }  /*End media min*/
-/*-----------------------------------------------End 992px media */
-
-
- /*-----------------------------------------------start 1200px media */
- @media(max-width:1200px){
- 
-
-
- }  /*End media max*/
- /*...................................  Extra large devices (large laptops and desktops, 1200px and up*/
-  @media(min-width:1200px){
- 
-
-
- }  /*End media min*/
-/*-----------------------------------------------End 1200px media */
- 
-
-@media only screen and (max-width: 600px) {...}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
-
-
-
-
-/*
-@media  (max-width: 599px){...}
-@media all and (min-width: 600px) and (max-width:799px){...}
-@media all and (min-width: 800px) and (max-width:1024px){...}
-@media all and (min-width: 700px) and (max-width: 1024px){...}
-@media all and (min-width: 1025px) and (max-width: 1399px){...}
-@media all and (min-width: 1400px){...}
- 
-@media screen and (max-width:320px) {}
-@media screen and (min-width:321px) and (max-width:639px) {}
-@media screen and (min-width:640px) and (max-width:959px) {}
-@media screen and (min-width:960px) and (max-width:1279px) {}
-@media screen and (min-width:1280px) and (max-width:1599px) {}
-@media screen and (min-width:1600px) {}
-@media screen and (min-width:1920px) {}
-@media print {}*/
-
+}
 
   </style>
 </head>
 <body>
+
+  <hr>
+  <hr>
+<!-- start section adds ======================================================================================-->
+<section class="content_adds m_b_20 ">
+       <div class="custom_container container">
+         <div class="row"> 
+      <!-- --------------------------------------------------------------- -->
+       <img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/banner/banner-top/2.png"
+     data-src-600px="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/banner/banner-top/2.png"
+     data-src-800px="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/banner/banner-top/2.png"
+     alt="">
+     
+             <!-- --------------------------------------------------------------- -->
+      </div><!--row-->
+    </div><!--container-->
+   <!-- -------------------------------------------------------------------------- -->
+</section><!--content-adds--> 
+<!-- End section adds ================================================================================================= -->
+
+  <hr>
+  <hr>
+
 
       
   
@@ -1347,6 +1180,8 @@ border-color:  #eee;
   <!-- -------------------------------------------------------------------------- -->
  <!-- End section slider ========================================================================================= -->
   
+
+  
 <!-- start section adds ======================================================================================-->
 <section class="content_adds m_b_20 ">
        <div class="custom_container container">
@@ -1362,10 +1197,13 @@ border-color:  #eee;
              <!-- --------------------------------------------------------------- -->
       </div><!--row-->
     </div><!--container-->
-  </div><!--content_adds-->
-  <!-- -------------------------------------------------------------------------- -->
+   <!-- -------------------------------------------------------------------------- -->
 </section><!--content-adds--> 
 <!-- End section adds ================================================================================================= -->
+
+
+
+
  <!-- start section product_min ========================================================================================-->
 <section class="content_product_min m_t_b_20  ">
   <!-- ..... --><address class="address_title m_t_30 ">  <h2> Top Products</h2></a></address><!-- .... -->
@@ -1379,7 +1217,7 @@ border-color:  #eee;
        <span  data-role ="p_spinners"class=" btn_choos_type_product">SPINNERS</span>
     </aside>
         <div class="row contact_row_product_min"> 
-           <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_all"  >
+           <div class="col-md-3 contact_col_product_min m_b_20" id="p_all"  >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/5.jpg">
@@ -1390,8 +1228,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span><span class="card_product_min_discrption">outstock</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-            <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_vape" >
+          </div><!--col-md-3............................................................-->
+            <div class="col-md-3 contact_col_product_min m_b_20" id="p_vape" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/6.jpg">
@@ -1402,8 +1240,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-            <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_smoke" >
+          </div><!--col-md-3............................................................-->
+            <div class="col-md-3 contact_col_product_min m_b_20" id="p_smoke" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/7.jpg">
@@ -1414,8 +1252,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-              <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_tools" >
+          </div><!--col-md-3............................................................-->
+              <div class="col-md-3 contact_col_product_min m_b_20" id="p_tools" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/8.jpg">
@@ -1426,8 +1264,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-                        <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_cotls" >
+          </div><!--col-md-3............................................................-->
+                        <div class="col-md-3 contact_col_product_min m_b_20" id="p_cotls" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/10.jpg">
@@ -1438,8 +1276,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-                        <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_spinners" >
+          </div><!--col-md-3............................................................-->
+                        <div class="col-md-3 contact_col_product_min m_b_20" id="p_spinners" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/9.jpg">
@@ -1450,9 +1288,9 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
+          </div><!--col-md-3............................................................-->
           <!-- *************************************************************************************************************************** -->
-                     <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_all"  >
+                     <div class="col-md-3 contact_col_product_min m_b_20" id="p_all"  >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/5.jpg">
@@ -1463,8 +1301,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span><span class="card_product_min_discrption">outstock</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-            <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_vape" >
+          </div><!--col-md-3............................................................-->
+            <div class="col-md-3 contact_col_product_min m_b_20" id="p_vape" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/6.jpg">
@@ -1475,8 +1313,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-            <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_smoke" >
+          </div><!--col-md-3............................................................-->
+            <div class="col-md-3 contact_col_product_min m_b_20" id="p_smoke" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/7.jpg">
@@ -1487,8 +1325,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-              <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_tools" >
+          </div><!--col-md-3............................................................-->
+              <div class="col-md-3 contact_col_product_min m_b_20" id="p_tools" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/8.jpg">
@@ -1499,8 +1337,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-                        <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_cotls" >
+          </div><!--col-md-3............................................................-->
+                        <div class="col-md-3 contact_col_product_min m_b_20" id="p_cotls" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/10.jpg">
@@ -1511,8 +1349,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-                        <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_spinners" >
+          </div><!--col-md-3............................................................-->
+                        <div class="col-md-3 contact_col_product_min m_b_20" id="p_spinners" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/9.jpg">
@@ -1523,9 +1361,9 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
+          </div><!--col-md-3............................................................-->
 
-                     <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_all"  >
+                     <div class="col-md-3 contact_col_product_min m_b_20" id="p_all"  >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/5.jpg">
@@ -1536,8 +1374,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span><span class="card_product_min_discrption">outstock</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-            <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_vape" >
+          </div><!--col-md-3............................................................-->
+            <div class="col-md-3 contact_col_product_min m_b_20" id="p_vape" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/6.jpg">
@@ -1548,8 +1386,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-            <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_smoke" >
+          </div><!--col-md-3............................................................-->
+            <div class="col-md-3 contact_col_product_min m_b_20" id="p_smoke" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/7.jpg">
@@ -1560,8 +1398,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-              <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_tools" >
+          </div><!--col-md-3............................................................-->
+              <div class="col-md-3 contact_col_product_min m_b_20" id="p_tools" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/8.jpg">
@@ -1572,8 +1410,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-                        <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_cotls" >
+          </div><!--col-md-3............................................................-->
+                        <div class="col-md-3 contact_col_product_min m_b_20" id="p_cotls" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/10.jpg">
@@ -1584,8 +1422,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-                        <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_spinners" >
+          </div><!--col-md-3............................................................-->
+                        <div class="col-md-3 contact_col_product_min m_b_20" id="p_spinners" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/9.jpg">
@@ -1596,9 +1434,9 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
+          </div><!--col-md-3............................................................-->
 
-                     <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_all"  >
+                     <div class="col-md-3 contact_col_product_min m_b_20" id="p_all"  >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/5.jpg">
@@ -1609,8 +1447,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span><span class="card_product_min_discrption">outstock</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-            <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_vape" >
+          </div><!--col-md-3............................................................-->
+            <div class="col-md-3 contact_col_product_min m_b_20" id="p_vape" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/6.jpg">
@@ -1621,8 +1459,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-            <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_smoke" >
+          </div><!--col-md-3............................................................-->
+            <div class="col-md-3 contact_col_product_min m_b_20" id="p_smoke" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/7.jpg">
@@ -1633,8 +1471,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-              <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_tools" >
+          </div><!--col-md-3............................................................-->
+              <div class="col-md-3 contact_col_product_min m_b_20" id="p_tools" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/8.jpg">
@@ -1645,8 +1483,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-                        <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_cotls" >
+          </div><!--col-md-3............................................................-->
+                        <div class="col-md-3 contact_col_product_min m_b_20" id="p_cotls" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/10.jpg">
@@ -1657,8 +1495,8 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
-                        <div class=" col-lg-3 col-md-6  col-sm-12 contact_col_product_min m_b_20" id="p_spinners" >
+          </div><!--col-md-3............................................................-->
+                        <div class="col-md-3 contact_col_product_min m_b_20" id="p_spinners" >
               <div class="card card_product_min" >
                  <a href="" class="a_link_product_min_img" >
                     <img class="posi_abs" src="http://213.136.84.116/~pixeleg/badry2019/assets/img/product/vape/9.jpg">
@@ -1669,7 +1507,7 @@ border-color:  #eee;
                    <center><p><span class="card_product_min_price">120.00</span><span class="card_product_min_price_through price_through">120.00</span></p></center>
                  </div><!--card-body-->
               </div><!--card-->
-          </div><!-- col-lg-3 col-md-6  col-sm-12............................................................-->
+          </div><!--col-md-3............................................................-->
 
 
                  
@@ -1858,72 +1696,16 @@ border-color:  #eee;
           
              <div class="col-md-6 contact_col_newsletter" >  
               <h4 class="title_p_newslettr">Newsletter</h4>
-              <h6 class="p_p_newslettr">Sign Up for get all update news & Get <a href="#">15% off</a></h6>
+              <h6 class="p_p_newslettr">Sign Up for get all update news & Get 15% off</h6>
              </div><!--col-md-6===============================-->
          <div class="col-md-6 contact_col_newsletter" >  
-        
-
-                  <div class=" con_form_news_letter">
-                
-                  <div class=" con_input_newsletter "><input type="text" class="input_form_newsletter" name=""></div>
-                  <div class="con_btn_newsletter"> <div class="input-group-prepend">
-                      <span class="input-group-text  btn_newsletter"><span> <button type="submit" class="btn btn_newsletter"> <i class="pe-7s-paper-plane pe-lg"></i></button></span>
+            <div class=" input-group input-group-sm mb-3">
+                <input type="text" class="form-control  input_newsletter"   >
+                  <div class="input-group-prepend">
+                      <span class="input-group-text  btn_newsletter"  ><span> <button type="submit" class="btn btn_newsletter"> <i class="pe-7s-paper-plane pe-lg"></i></button></span>
                     </span> 
-              </div></div>
-                  </div>
-             
-              <style type="text/css">
-                .con_form_news_letter{
-                  /*background: red;*/
-                  height: 50px;
-                  width: 100%;
-                  padding: 0;
-                  margin: 0;
-
-                } 
-                  .con_input_newsletter{
-/*                  background: green;
-*/                  height: 50px;
-                  width: 89%;
-                  display: inline-block;
-                }
-                   .con_btn_newsletter{
-                  /*background: blue;*/
-                  height: 50px;
-                  width: 10%;
-                  display: inline-block;
-                }
-               .btn_newsletter {
-                 margin-left: -15px;
-    border-radius: 5px;
-    padding-right: 30px;
-                }
-.prepend .btn {
-    position: unset;
-    z-index: -2;
-}
- 
-  .con_input_newsletter input {
-    z-index: 2;
-   background: #b6b3b300 none repeat scroll 0 0;
-    border: 1px solid #aaaaaa;
-    border-radius: 5px;
-    color: #999999;
-    font-size: 12px;
-    height: 48px;
-    line-height: 48px;
-    padding-left: 20px;
-    padding-right: 55px;
-    position: relative;
-    width: 100%;
-    background: #fff;
-  }
-  .input-group-append .btn, .input-group-prepend .btn.btn_newsletter {
-    position: inherit;
-    z-index: 2;
-}
-              </style>
-           
+              </div>
+            </div>
           </div><!--col-md-6===============================-->
         </div><!--row-->
      </div><!--container-->
@@ -1939,21 +1721,6 @@ border-color:  #eee;
          <div class="row ">  
              <!-- --------------------------------------------------------------- -->
               <div class="owl-carousel owl-theme owl_carousel_brands">
-                  <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/6.png" alt="img_brands"></div>
-                  <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/7.png" alt="img_brands"></div>
-                  <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/1.png" alt="img_brands"></div>
-                  <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/2.png" alt="img_brands"></div>
-                  <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/3.png" alt="img_brands"></div>
-                  <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/5.png" alt="img_brands"></div>
-                  <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/8.png" alt="img_brands"></div>
-                  <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/9.png" alt="img_brands"></div>
-                  <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/10.png" alt="img_brands"></div>
-                  <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/11.png" alt="img_brands"></div>
-                  <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/12.png" alt="img_brands"></div>
-                  <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/13.png" alt="img_brands"></div>
-                  <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/14.png" alt="img_brands"></div>
-                  <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/15.png" alt="img_brands"></div>
-
                   <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/6.png" alt="img_brands"></div>
                   <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/7.png" alt="img_brands"></div>
                   <div class="item"><img src="http://213.136.84.116/~pixeleg/badry2019/layout/img/elbadry/brand-logo/1.png" alt="img_brands"></div>
@@ -1990,7 +1757,7 @@ border-color:  #eee;
        <div class="content_footer_section_addres_pages_cat p_t_b_20">
        <div class="container">
          <div class="row">  
-             <div class="col-md-3 d-none d-lg-block  contact_col" >
+             <div class="col-md-3 contact_col" >
               <h3 class="head_4_title_footer">ContactUs</h3>            
           <div class="content_foter_contact_us">
               <i class=" i_addres_title_contact_us"> ADDRESS : </i> <span> 77 Seventh Streeth Banasree</span><p>Road Rampura -2100 Dhaka</p>
@@ -2002,7 +1769,7 @@ border-color:  #eee;
  
                     
              </div><!--col-md-3===============================-->
-                <div class="col-md-3 d-none d-lg-block ">
+                <div class="col-md-3">
               <h3 class="head_4_title_footer">paegs</h3>
                   <div>
                 <ul class="">
@@ -2014,7 +1781,7 @@ border-color:  #eee;
                 </ul>
               </div>
              </div><!--col-md-3===============================-->
-              <div class="col-md-3 d-none d-lg-block ">
+              <div class="col-md-3">
               <h3 class="head_4_title_footer">DEPARTMENTS</h3>
                   <div>
                 <ul class="">
@@ -2028,7 +1795,7 @@ border-color:  #eee;
               </div>
              </div><!--col-md-3===============================-->
  
-                   <div class="col-md-3 d-none d-lg-block ">
+                   <div class="col-md-3">
               <h3 class="head_4_title_footer">shipments  </h3>
                   <div>
                 <ul class="">
@@ -2051,7 +1818,7 @@ border-color:  #eee;
       </div><!--row-->
     </div><!--content_footer_section3_icons-->
         <!-- ---------------------------------------------------------------- -->
-      <div class="content_footer_section3_icons d-none d-lg-block  ">
+      <div class="content_footer_section3_icons">
        <div class="container">   
       <div class="row">
      <div class="col-md-4"> <i class=" icons_footer3icon pe-7s-car"></i>  <span class="span_content"><p class="p_1">Free Shipping</p><p class="p_2">Free Shipping on Bangladesh</p></span></div><!--col-md-4-->
@@ -2064,10 +1831,10 @@ border-color:  #eee;
     <div class="content_footer_copyright_social">
     <div class="container">
         <div class="row">
-      <div class="col-md-6 col-sm-12 m_t_10">
+      <div class="col-md-6">
         <p class="Copyright_footer">Copyright © 2019 .All Rights Reserved To <a class="a_link_footer" href="badry.net">badry.net</a> | Powered By : <a class="a_link_footer" href="pixeL-eg.com">PixeL</a></p>
       </div><!--col-md-6-->
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-6">
         <a href="http://facebook.com/" class="a_link_footer_social"><i class="fa fa-facebook"></i></a>
         <a href="http://twitter.com/" class="a_link_footer_social"><i class="fa fa-twitter"></i></a>
         <a href="http://instagram.com/" class="a_link_footer_social"><i class="fa fa-instagram"></i></a>
@@ -2093,154 +1860,89 @@ border-color:  #eee;
 $('.owl_carousel_brands').owlCarousel({
     loop:true,
     autoplay:true,
-    autoplayTimeout:1300,
+    autoplayTimeout:2000,
     margin:10,
     nav:true,
-    dots:true,
-    dotsSpeed:500,
-   smartSpeed:1300,
+    dots:false,
+   smartSpeed:2000,
 
-    responsive: {
-                0: {
-                    items: 3,
-                    autoWidth: false
-                },
-                568: {
-                    items: 4,
-                    autoWidth: false
-                },
-                667: {
-                    items: 4,
-                    autoWidth: false
-                },
-                768: {
-                    items: 5,
-                    autoWidth: false
-                },
-                1000: {
-                    items: 6,
-                    autoWidth: false
-                },
-                1200: {
-                    items:7,
-                    autoWidth: false
-                }
-            }
+    responsive:{
+        0:{
+            items:4
+        },
+        600:{
+            items:6
+        },
+        1000:{
+            items:8
+        }
+    }
 });
 // ------------------------------------------------------owl_carousel_soqu
 $('.owl_carousel_soqu').owlCarousel({
     loop:true,
     autoplay:true,
     autoplayTimeout:2000,
-    nav:false,
+    margin:10,
+    nav:true,
     dots:false,
    smartSpeed:2000,
-   margin:30,
-         responsive: {
-          0: {
-                    items: 2,
-                    autoWidth: false
-                },
-                568: {
-                    items: 3,
-                    autoWidth: false
-                },
-                667: {
-                    items: 3,
-                    autoWidth: false
-                },
-                768: {
-                    items: 4,
-                    autoWidth: false
-                },
-                1000: {
-                    items: 5,
-                    autoWidth: false
-                },
-                1200: {
-                    items:7,
-                    autoWidth: false
-                }
-           }
+
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:8
+        }
+    }
 });
- 
 // ------------------------------------------------------owl_carousel_soqu2
 $('.owl_carousel_soqu2').owlCarousel({
     loop:true,
     autoplay:true,
     autoplayTimeout:3000,
-    nav:false,
+    margin:10,
+    nav:true,
     dots:false,
    smartSpeed:3000,
-   margin:30,
-         responsive: {
-          0: {
-                    items: 2,
-                    autoWidth: false
-                },
-                568: {
-                    items: 3,
-                    autoWidth: false
-                },
-                667: {
-                    items: 3,
-                    autoWidth: false
-                },
-                768: {
-                    items: 4,
-                    autoWidth: false
-                },
-                1000: {
-                    items: 5,
-                    autoWidth: false
-                },
-                1200: {
-                    items:7,
-                    autoWidth: false
-                }
-           }
+
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:8
+        }
+    }
 });
 // ------------------------------------------------------
 $('.owl_carousel_adds').owlCarousel({
-             loop: true,
-            margin: 30,
-            nav: true,
-            navText: [
-                // '<i class="fa fa-angle-left"></i>',
-                // '<i class="fa fa-angle-right"></i>'
-            ],            
-            dots: false,
-            autoWidth: false,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
-            smartSpeed:3000,
-            responsive: {
-                0: {
-                    items: 1,
-                    autoWidth: false
-                },
-                568: {
-                    items: 1,
-                    autoWidth: false
-                },
-                667: {
-                    items: 2,
-                    autoWidth: false
-                },
-                768: {
-                    items: 2,
-                    autoWidth: false
-                },
-                1000: {
-                    items: 3,
-                    autoWidth: false
-                },
-                1200: {
-                    items:4,
-                    autoWidth: false
-                }
-            }
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    margin:10,
+    nav:false,
+    dots:false,
+   smartSpeed:3000,
+
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
 });
 
 
